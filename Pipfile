@@ -7,6 +7,7 @@ name = "pypi"
 "discord.py" = {extras = ["voice"], version = "*"}
 yt-dlp = "*"
 py-cord = {extras = ["voice"], version = "*"}
+ffmpeg = "*"
 
 [dev-packages]
 
