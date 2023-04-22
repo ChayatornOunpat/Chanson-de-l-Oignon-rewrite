@@ -114,6 +114,7 @@ class Music(commands.Cog):
             loop[guild] = False
             repeat[guild] = False
             await vstate[guild].disconnect(force=True)
+            task[guild].cancel()
             await ctx.respond("successfully disconnected the bot from the voice channel")
 
     @commands.slash_command(name='loop')
